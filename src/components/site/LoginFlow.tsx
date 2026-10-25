@@ -73,9 +73,9 @@ export function LoginFlow() {
         <div className="mx-auto grid max-w-5xl overflow-hidden rounded-3xl bg-white shadow-2xl shadow-black/5 lg:grid-cols-2">
           {/* Brand panel */}
           <div className="relative hidden flex-col justify-between overflow-hidden bg-ink-900 p-10 text-white lg:flex">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_0%,rgba(239,28,43,0.45),transparent_55%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_0%,rgba(14,165,233,0.45),transparent_55%)]" />
             <div className="relative">
-              <Image src="/logo.jpeg" alt="Unique Hub 24" width={80} height={80} className="size-20 rounded-full ring-4 ring-white/10" />
+              <Image src="/logo.png" alt="Unique Hub 24" width={80} height={80} className="size-20 rounded-full ring-4 ring-white/10" />
               <h2 className="mt-8 text-3xl font-bold leading-tight">Secure, password-free login with Email OTP</h2>
               <p className="mt-3 text-zinc-400">No passwords to remember. We send a one-time code to your email every time you sign in.</p>
             </div>

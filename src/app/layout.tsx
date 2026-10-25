@@ -11,11 +11,11 @@ export const metadata: Metadata = {
   title: { default: "Unique Hub 24 — Laptops, Computers & IT Services", template: "%s | Unique Hub 24" },
   description:
     "Unique Hub 24 — buy laptops, desktops, components, CCTV and networking products, and book computer repair, rental, data recovery and IT services.",
-  icons: { icon: "/logo.jpeg" },
+  icons: { icon: "/logo.png" },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#d90f1f",
+  themeColor: "#0284c7",
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",

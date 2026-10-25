@@ -44,20 +44,20 @@ export function Header() {
   return (
     <>
       {/* Top bar */}
-      <div className="hidden bg-ink-900 text-xs text-zinc-300 md:block">
-        <div className="container-x flex h-10 items-center justify-between">
-          <div className="flex items-center gap-6">
-            <a href={telHref(SITE.phone)} className="flex items-center gap-1.5 hover:text-white"><Phone className="size-3.5 text-brand-500" />Service: {SITE.phone}</a>
-            <a href={telHref(SITE.salesPhone)} className="hidden items-center gap-1.5 hover:text-white xl:flex"><Phone className="size-3.5 text-brand-500" />Sales: {SITE.salesPhone}</a>
-            <a href={`mailto:${SITE.email}`} className="flex items-center gap-1.5 hover:text-white"><Mail className="size-3.5 text-brand-500" />{SITE.email}</a>
-            <span className="hidden items-center gap-1.5 lg:flex"><Clock className="size-3.5 text-brand-500" />{SITE.hours}</span>
+      <div className="hidden bg-gradient-to-r from-brand-600 to-brand-500 text-sm font-medium text-white md:block">
+        <div className="container-x flex h-11 items-center justify-between">
+          <div className="flex items-center gap-5">
+            <a href={telHref(SITE.phone)} className="flex items-center gap-1.5 font-semibold hover:text-brand-100"><Phone className="size-4" />Service: <span className="text-base font-bold tracking-wide">{SITE.phone}</span></a>
+            <a href={telHref(SITE.salesPhone)} className="hidden items-center gap-1.5 hover:text-brand-100 xl:flex"><Phone className="size-4" />Sales: {SITE.salesPhone}</a>
+            <a href={`mailto:${SITE.email}`} className="flex items-center gap-1.5 hover:text-brand-100"><Mail className="size-4" />{SITE.email}</a>
+            <span className="hidden items-center gap-1.5 xl:flex"><Clock className="size-4" />{SITE.hours}</span>
           </div>
           <div className="flex items-center gap-4">
-            <span className="text-zinc-400">Free delivery on orders above ₹{SITE.freeShippingAbove.toLocaleString("en-IN")}</span>
+            <span className="hidden text-white/90 lg:inline">Free delivery above ₹{SITE.freeShippingAbove.toLocaleString("en-IN")}</span>
             <div className="flex items-center gap-3">
-              <a href={SITE.social.facebook} target="_blank" rel="noreferrer" className="hover:text-white" aria-label="Facebook"><FacebookIcon className="size-3.5" /></a>
-              <a href={SITE.social.instagram} target="_blank" rel="noreferrer" className="hover:text-white" aria-label="Instagram"><InstagramIcon className="size-3.5" /></a>
-              <a href={SITE.social.youtube} target="_blank" rel="noreferrer" className="hover:text-white" aria-label="YouTube"><YoutubeIcon className="size-3.5" /></a>
+              <a href={SITE.social.facebook} target="_blank" rel="noreferrer" className="hover:text-brand-100" aria-label="Facebook"><FacebookIcon className="size-4" /></a>
+              <a href={SITE.social.instagram} target="_blank" rel="noreferrer" className="hover:text-brand-100" aria-label="Instagram"><InstagramIcon className="size-4" /></a>
+              <a href={SITE.social.youtube} target="_blank" rel="noreferrer" className="hover:text-brand-100" aria-label="YouTube"><YoutubeIcon className="size-4" /></a>
             </div>
           </div>
         </div>
@@ -65,9 +65,9 @@ export function Header() {
 
       {/* Main header */}
       <header className={cn("sticky top-0 z-50 border-b bg-white/90 backdrop-blur-xl transition-shadow", scrolled ? "border-zinc-200 shadow-lg shadow-black/5" : "border-transparent")}>
-        <div className="container-x flex h-[72px] items-center gap-4 lg:gap-8">
+        <div className="container-x flex h-20 items-center gap-4 lg:gap-8">
           <Link href="/" className="flex shrink-0 items-center gap-2.5">
-            <Image src="/logo.jpeg" alt="Unique Hub 24" width={48} height={48} className="size-12 rounded-full" priority />
+            <Image src="/logo.png" alt="Unique Hub 24" width={64} height={64} className="size-14 sm:size-16" priority />
             <div className="leading-tight">
               <p className="font-display text-lg font-extrabold tracking-tight text-zinc-900">UNIQUE <span className="text-brand-600">HUB</span></p>
               <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-zinc-500">24 · Tech Store</p>
@@ -140,7 +140,7 @@ export function Header() {
         <aside className={cn("absolute right-0 top-0 flex h-full w-[85%] max-w-sm flex-col bg-white shadow-2xl transition-transform duration-300", open ? "translate-x-0" : "translate-x-full")}>
           <div className="flex items-center justify-between border-b p-4">
             <div className="flex items-center gap-2">
-              <Image src="/logo.jpeg" alt="" width={40} height={40} className="size-10 rounded-full" />
+              <Image src="/logo.png" alt="" width={48} height={48} className="size-12" />
               <span className="font-display font-extrabold">UNIQUE <span className="text-brand-600">HUB</span> 24</span>
             </div>
             <button onClick={() => setOpen(false)} className="flex size-10 items-center justify-center rounded-full hover:bg-zinc-100" aria-label="Close menu"><X className="size-5" /></button>

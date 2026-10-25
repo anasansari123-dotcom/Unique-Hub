@@ -17,7 +17,7 @@ export function Footer() {
   const directions = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(SITE.mapQuery)}`;
 
   return (
-    <footer className="relative mt-auto overflow-hidden bg-ink-900 text-zinc-400">
+    <footer className="relative mt-auto overflow-hidden bg-ink-900 text-sky-100/75">
       <div className="absolute -right-40 -top-40 size-96 rounded-full bg-brand-600/20 blur-3xl" />
 
       {/* Newsletter */}
@@ -28,7 +28,7 @@ export function Footer() {
             <p className="mt-1 text-xs sm:text-sm">New arrivals, festive offers and tech tips — no spam, ever.</p>
           </div>
           <form className="flex w-full max-w-md gap-2">
-            <input type="email" required placeholder="Enter your email" className="input min-w-0 border-white/10 bg-white/5 text-white placeholder:text-zinc-500" />
+            <input type="email" required placeholder="Enter your email" className="input min-w-0 border-white/10 bg-white/5 text-white placeholder:text-sky-100/50" />
             <button className="btn-primary shrink-0 px-4 sm:px-5" aria-label="Subscribe"><Send className="size-4" /><span className="hidden sm:inline">Subscribe</span></button>
           </form>
         </div>
@@ -38,7 +38,7 @@ export function Footer() {
         {/* Brand */}
         <div className="col-span-2 lg:col-span-4">
           <Link href="/" className="flex items-center gap-3">
-            <Image src="/logo.jpeg" alt="Unique Hub 24" width={56} height={56} className="size-12 rounded-full ring-2 ring-white/10 sm:size-14" />
+            <Image src="/logo.png" alt="Unique Hub 24" width={72} height={72} className="size-16 rounded-full bg-white p-0.5 ring-2 ring-brand-500/40 sm:size-[72px]" />
             <div>
               <p className="font-display text-lg font-extrabold text-white sm:text-xl">UNIQUE <span className="text-brand-500">HUB</span> 24</p>
               <p className="text-[10px] uppercase tracking-[0.12em] sm:text-xs sm:tracking-[0.2em]">{SITE.tagline}</p>

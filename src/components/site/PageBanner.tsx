@@ -3,21 +3,21 @@ import { ChevronRight } from "lucide-react";
 
 export function PageBanner({ title, subtitle, crumbs }: { title: string; subtitle?: string; crumbs: { label: string; href?: string }[] }) {
   return (
-    <section className="relative overflow-hidden bg-ink-900 text-white">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(239,28,43,0.35),transparent_45%),radial-gradient(circle_at_10%_90%,rgba(239,28,43,0.18),transparent_40%)]" />
-      <div className="absolute inset-0 opacity-[0.07] [background-image:linear-gradient(white_1px,transparent_1px),linear-gradient(90deg,white_1px,transparent_1px)] [background-size:40px_40px]" />
+    <section className="relative overflow-hidden bg-gradient-to-br from-brand-700 via-brand-600 to-brand-500 text-white">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_15%,rgba(255,255,255,0.22),transparent_45%),radial-gradient(circle_at_10%_90%,rgba(8,47,73,0.35),transparent_45%)]" />
+      <div className="absolute inset-0 opacity-[0.08] [background-image:linear-gradient(white_1px,transparent_1px),linear-gradient(90deg,white_1px,transparent_1px)] [background-size:40px_40px]" />
       <div className="container-x relative py-9 sm:py-20">
-        <nav className="flex flex-wrap items-center gap-1.5 text-xs text-zinc-400 sm:text-sm">
+        <nav className="flex flex-wrap items-center gap-1.5 text-xs text-brand-100 sm:text-sm">
           <Link href="/" className="hover:text-white">Home</Link>
           {crumbs.map((c) => (
             <span key={c.label} className="flex items-center gap-1.5">
               <ChevronRight className="size-3.5" />
-              {c.href ? <Link href={c.href} className="hover:text-white">{c.label}</Link> : <span className="text-brand-500">{c.label}</span>}
+              {c.href ? <Link href={c.href} className="hover:text-white">{c.label}</Link> : <span className="font-semibold text-white">{c.label}</span>}
             </span>
           ))}
         </nav>
-        <h1 className="mt-2 text-[1.75rem] font-bold leading-tight sm:mt-3 sm:text-5xl">{title}</h1>
-        {subtitle && <p className="mt-2 max-w-2xl text-sm text-zinc-300 sm:mt-3 sm:text-base">{subtitle}</p>}
+        <h1 className="mt-2 text-[1.75rem] font-bold drop-shadow-sm leading-tight sm:mt-3 sm:text-5xl">{title}</h1>
+        {subtitle && <p className="mt-2 max-w-2xl text-sm text-white/90 sm:mt-3 sm:text-base">{subtitle}</p>}
       </div>
     </section>
   );

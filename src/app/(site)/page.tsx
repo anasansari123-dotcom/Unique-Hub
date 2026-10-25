@@ -94,25 +94,25 @@ export default function HomePage() {
       </section>
 
       {/* Services */}
-      <section className="relative overflow-hidden bg-ink-900 py-12 sm:py-20 text-white">
-        <div className="absolute inset-0 opacity-[0.05] [background-image:linear-gradient(white_1px,transparent_1px),linear-gradient(90deg,white_1px,transparent_1px)] [background-size:48px_48px]" />
+      <section className="relative overflow-hidden bg-gradient-to-br from-brand-700 via-brand-600 to-brand-500 py-12 sm:py-20 text-white">
+        <div className="absolute inset-0 opacity-[0.08] [background-image:linear-gradient(white_1px,transparent_1px),linear-gradient(90deg,white_1px,transparent_1px)] [background-size:48px_48px]" />
         <div className="container-x relative">
           <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-end">
             <div className="max-w-2xl">
-              <span className="eyebrow bg-white/10 text-brand-500">What We Do</span>
-              <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Complete IT services for homes & businesses</h2>
-              <p className="mt-3 text-zinc-400">Certified technicians, genuine parts and transparent pricing — that&apos;s the Unique Hub promise.</p>
+              <span className="eyebrow bg-white/15 text-white">What We Do</span>
+              <h2 className="mt-3 text-3xl font-bold sm:text-5xl">Complete IT services for homes & businesses</h2>
+              <p className="mt-3 text-base text-white/90 sm:text-lg">Certified technicians, genuine parts and transparent pricing — that&apos;s the Unique Hub promise.</p>
             </div>
-            <Link href="/services" className="btn border border-white/20 text-white hover:bg-white hover:text-ink-900">All Services<ArrowRight className="size-4" /></Link>
+            <Link href="/services" className="btn border border-white/40 bg-white/10 text-white hover:bg-white hover:text-brand-700">All Services<ArrowRight className="size-4" /></Link>
           </div>
           <div className="mt-8 sm:mt-12 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4">
             {SERVICES.slice(0, 8).map((s, idx) => (
-              <Link key={s.id} href={`/services#${s.id}`} className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] p-4 transition sm:p-6 hover:-translate-y-1 hover:border-brand-500/50 hover:bg-white/[0.06]">
-                <span className="absolute right-5 top-4 hidden sm:block font-display text-5xl font-extrabold text-white/5">{String(idx + 1).padStart(2, "0")}</span>
-                <span className="flex size-10 items-center sm:size-12 justify-center rounded-xl bg-brand-600/15 text-brand-500 transition group-hover:bg-brand-600 group-hover:text-white"><Icon name={s.icon} className="size-5 sm:size-6" /></span>
-                <h3 className="mt-3 text-sm font-semibold leading-snug sm:mt-5 sm:text-lg">{s.title}</h3>
-                <p className="mt-2 hidden text-sm leading-relaxed text-zinc-400 sm:block">{s.short}</p>
-                <span className="mt-4 hidden sm:inline-flex items-center gap-1 text-sm font-semibold text-brand-500">Learn more<ArrowRight className="size-4 transition group-hover:translate-x-1" /></span>
+              <Link key={s.id} href={`/services#${s.id}`} className="group relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur-sm transition sm:p-6 hover:-translate-y-1 hover:border-white/50 hover:bg-white/20">
+                <span className="absolute right-5 top-4 hidden sm:block font-display text-5xl font-extrabold text-white/25">{String(idx + 1).padStart(2, "0")}</span>
+                <span className="flex size-10 items-center sm:size-12 justify-center rounded-xl bg-white text-brand-600 transition group-hover:bg-ink-900 group-hover:text-white"><Icon name={s.icon} className="size-5 sm:size-6" /></span>
+                <h3 className="mt-3 text-base font-bold leading-snug sm:mt-5 sm:text-xl">{s.title}</h3>
+                <p className="mt-2 hidden text-[15px] leading-relaxed text-white/90 sm:block">{s.short}</p>
+                <span className="mt-4 hidden sm:inline-flex items-center gap-1 text-sm font-semibold text-white">Learn more<ArrowRight className="size-4 transition group-hover:translate-x-1" /></span>
               </Link>
             ))}
           </div>
@@ -201,14 +201,14 @@ export default function HomePage() {
       {/* CTA */}
       <section className="py-12 sm:py-20">
         <div className="container-x">
-          <div className="relative overflow-hidden rounded-3xl bg-ink-900 px-6 py-14 text-center text-white sm:px-12">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(239,28,43,0.4),transparent_60%)]" />
+          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand-700 via-brand-600 to-brand-500 px-6 py-14 text-center text-white sm:px-12">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(255,255,255,0.25),transparent_60%)]" />
             <div className="relative">
               <h2 className="text-3xl font-bold sm:text-4xl">Need help choosing the right device?</h2>
-              <p className="mx-auto mt-3 max-w-xl text-zinc-300">Talk to our experts on call or WhatsApp — we&apos;ll recommend the best option for your budget and needs.</p>
+              <p className="mx-auto mt-3 max-w-xl text-white/90">Talk to our experts on call or WhatsApp — we&apos;ll recommend the best option for your budget and needs.</p>
               <div className="mt-8 flex flex-wrap justify-center gap-3">
                 <a href={whatsappLink("Hi! I need help choosing a product.")} target="_blank" rel="noreferrer" className="btn bg-[#25D366] px-7 py-3.5 text-white hover:brightness-110"><WhatsAppIcon className="size-5" />Chat on WhatsApp</a>
-                <a href={telHref(SITE.phone)} className="btn border border-white/20 px-7 py-3.5 text-white hover:bg-white hover:text-ink-900"><PhoneCall className="size-4" />{SITE.phone}</a>
+                <a href={telHref(SITE.phone)} className="btn border border-white/40 bg-white/10 px-7 py-3.5 text-white hover:bg-white hover:text-brand-700"><PhoneCall className="size-4" />{SITE.phone}</a>
               </div>
             </div>
           </div>

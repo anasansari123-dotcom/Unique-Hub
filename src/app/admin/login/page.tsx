@@ -38,11 +38,11 @@ export default function AdminLogin() {
 
   return (
     <div className="relative flex min-h-screen items-center justify-center overflow-hidden bg-ink-900 p-4">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(239,28,43,0.35),transparent_40%),radial-gradient(circle_at_80%_90%,rgba(239,28,43,0.2),transparent_40%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(14,165,233,0.35),transparent_40%),radial-gradient(circle_at_80%_90%,rgba(14,165,233,0.2),transparent_40%)]" />
       <div className="absolute inset-0 opacity-[0.06] [background-image:linear-gradient(white_1px,transparent_1px),linear-gradient(90deg,white_1px,transparent_1px)] [background-size:44px_44px]" />
       <div className="relative w-full max-w-md animate-fade-up rounded-3xl bg-white p-8 shadow-2xl sm:p-10">
         <div className="flex flex-col items-center text-center">
-          <Image src="/logo.jpeg" alt="Unique Hub 24" width={84} height={84} className="size-21 rounded-full" priority />
+          <Image src="/logo.png" alt="Unique Hub 24" width={84} height={84} className="size-21 rounded-full" priority />
           <h1 className="mt-4 text-2xl font-bold">ERP Admin Panel</h1>
           <p className="text-sm text-zinc-500">Sign in to manage your store</p>
         </div>

@@ -57,7 +57,7 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
   const Sidebar = (
     <div className="flex h-full flex-col bg-ink-900 text-zinc-400">
       <div className="flex items-center gap-3 border-b border-white/10 px-5 py-5">
-        <Image src="/logo.jpeg" alt="" width={44} height={44} className="size-11 rounded-full" />
+        <Image src="/logo.png" alt="" width={44} height={44} className="size-11 rounded-full" />
         <div>
           <p className="font-display text-base font-extrabold text-white">UNIQUE <span className="text-brand-500">HUB</span> 24</p>
           <p className="text-[10px] font-semibold uppercase tracking-[0.2em]">ERP Console</p>

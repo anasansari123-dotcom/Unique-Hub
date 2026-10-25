@@ -11,7 +11,7 @@ export function Invoice({ order }: { order: Order }) {
     <div id="invoice" className="mx-auto w-full max-w-[820px] bg-white p-6 text-[13px] text-zinc-800 sm:p-10 print:max-w-none print:p-0">
       <div className="flex flex-col justify-between gap-6 border-b-4 border-brand-600 pb-6 sm:flex-row">
         <div className="flex items-start gap-4">
-          <Image src="/logo.jpeg" alt="Unique Hub 24" width={72} height={72} className="size-[72px] rounded-full" />
+          <Image src="/logo.png" alt="Unique Hub 24" width={72} height={72} className="size-[72px] rounded-full" />
           <div>
             <p className="font-display text-2xl font-extrabold text-zinc-900">UNIQUE <span className="text-brand-600">HUB</span> 24</p>
             <p className="text-xs font-semibold text-zinc-700">{SITE.legalName}</p>

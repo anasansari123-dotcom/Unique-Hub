@@ -43,10 +43,10 @@ export function HeroSlider() {
       {SLIDES.map((s, idx) => (
         <div key={idx} className={cn("absolute inset-0 transition-opacity duration-1000", idx === i ? "opacity-100" : "opacity-0")}>
           <SmartImage src={s.image} alt="" className={cn("size-full transition-transform duration-[7000ms]", idx === i ? "scale-105" : "scale-100")} />
-          <div className="absolute inset-0 bg-gradient-to-r from-ink-900 via-ink-900/85 to-ink-900/20" />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink-900 via-ink-900/80 to-brand-600/25" />
         </div>
       ))}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_0%_100%,rgba(239,28,43,0.35),transparent_45%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_0%_100%,rgba(14,165,233,0.35),transparent_45%)]" />
 
       <div className="container-x relative flex min-h-[520px] items-center pb-24 pt-14 sm:min-h-[620px] sm:py-20">
         <div key={i} className="max-w-2xl animate-fade-up text-white">
