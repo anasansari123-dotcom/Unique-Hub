@@ -15,6 +15,7 @@ const NAV = [
   { href: "/", label: "Home" },
   { href: "/products", label: "Shop" },
   { href: "/services", label: "Services", dropdown: true },
+  { href: "/offer", label: "Offer" },
   { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact" },
 ];
@@ -66,8 +67,8 @@ export function Header() {
       {/* Main header */}
       <header className={cn("sticky top-0 z-50 border-b bg-white/90 backdrop-blur-xl transition-shadow", scrolled ? "border-zinc-200 shadow-lg shadow-black/5" : "border-transparent")}>
         <div className="container-x flex h-20 items-center gap-4 lg:gap-8">
-          <Link href="/" className="flex shrink-0 items-center gap-2.5">
-            <Image src="/logo.png" alt="Unique Hub 24" width={64} height={64} className="size-14 sm:size-16" priority />
+          <Link href="/" className="flex h-full shrink-0 items-center gap-2.5">
+            <Image src="/logo.png" alt="Unique Hub 24" width={80} height={80} className="h-full w-auto" priority />
             <div className="leading-tight">
               <p className="font-display text-lg font-extrabold tracking-tight text-zinc-900">UNIQUE <span className="text-brand-600">HUB</span></p>
               <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-zinc-500">24 · Tech Store</p>

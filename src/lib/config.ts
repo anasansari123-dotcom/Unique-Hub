@@ -4,7 +4,7 @@ export const SITE = {
   legalName: "Unique Traders",
   tagline: "Your One-Stop Tech Destination",
   phone: "+91 93680 52112", // Service number
-  salesPhone: "0131-7966331",
+  salesPhone: "+91-9837222112",
   whatsapp: "919837222112", // country code + number, no "+" or spaces
   whatsappDisplay: "+91 98372 22112",
   email: "unqind2112@gmail.com",

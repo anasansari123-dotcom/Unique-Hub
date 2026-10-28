@@ -5,7 +5,7 @@ import { SITE, telHref, whatsappLink } from "@/lib/config";
 import { SERVICES } from "@/lib/data";
 import { FacebookIcon, InstagramIcon, WhatsAppIcon, XIcon, YoutubeIcon } from "@/components/ui/BrandIcons";
 
-const QUICK_LINKS = [["Home", "/"], ["Shop", "/products"], ["Services", "/services"], ["About Us", "/about"], ["Contact Us", "/contact"], ["My Account", "/account"]];
+const QUICK_LINKS = [["Home", "/"], ["Shop", "/products"], ["Services", "/services"], ["Offer", "/offer"], ["About Us", "/about"], ["Contact Us", "/contact"], ["My Account", "/account"]];
 
 export function Footer() {
   const socials = [
